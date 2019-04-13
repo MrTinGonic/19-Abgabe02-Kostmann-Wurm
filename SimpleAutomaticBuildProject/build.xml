@@ -9,4 +9,8 @@
 		<mkdir dir="${build.dir}"/>
 	</target>
 
+    <target name="clean"> <!--delets build folder-->
+        <delete dir="${build.dir}"/>
+    </target>
+
 </project>
