@@ -1,0 +1,18 @@
+Leo: IntellJ -> Projekt aus git von michael herunterladen, pom importieren, projekstruktur erstellt. 
+1)
+Rechtsklick auf main -> build -> im Terminal ausführen mit java -jar Javadatei.jar Parameter
+Leo Initial Commit in GitRepo
+Flo pulled
+Flo&leo: build mit Hilfe von mvn compile und mvn package
+
+2)
+Manuelle Jar-Datei erzeugen: (Screenshot jar_analog.png)
+Leo: src Ordner->kompiliert Main.java (javac Main.java) -> Main.class
+Dann wird im iit-Ordner eine Manifest.txt erzeugt (Main-Class: at.fhj.iit.Main)
+Cd auf java-Verzeichnis (alles darunter ist package)
+Auf dieser Eben wird dann Jar-Datei mit Befehl: jar cfm Main.jar root-zu-manifest.txt root-zu-main.class ->jar file erzeugt
+Jar-File ausführen: java -jar Main.jar Parameter
+Leo-Commit->push
+Flo pull
+
+
