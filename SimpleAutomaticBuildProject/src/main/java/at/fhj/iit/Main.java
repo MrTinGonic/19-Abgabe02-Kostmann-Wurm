@@ -14,6 +14,7 @@ public class Main {
     {
         String msg = "Hello " + name + "!";
         System.out.println(msg);
+        System.out.println("Florian Kostmann, Leopold Wurm");
         return msg.length();
 	}
 
