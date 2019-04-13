@@ -3,7 +3,8 @@
 
 
     <property name="build.dir"   value="build"/>
-
+    <property name="src.dir"     value="src"/>
+    <property name="classes.dir" value="${build.dir}/classes"/>
 
 	<target name="init"> <!-- init creates a directory-->
 		<mkdir dir="${build.dir}"/>
@@ -11,6 +12,11 @@
 
     <target name="clean"> <!--delets build folder-->
         <delete dir="${build.dir}"/>
+    </target>
+
+    <target name="compile" depends="init"> <!--Takes src folder and creates a class class file also compiles src folder-->
+        <mkdir dir="${classes.dir}"/>
+        <javac srcdir="${src.dir}" destdir="${classes.dir}" includeantruntime="false"/>
     </target>
 
 </project>
